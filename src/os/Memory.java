@@ -1,4 +1,4 @@
-package moske;
+package os;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -10,7 +10,6 @@ package moske;
  *
  * @author LD
  */
-import static moske.Utils.*;
 
 
 public class Memory {
