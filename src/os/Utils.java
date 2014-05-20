@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 
-package moske;
+package os;
 
 /**
  *
- * @author LD
+ * @author adomas
  */
 public class Utils {
     public static char intToChar(int integer) throws CastException {
@@ -19,7 +19,7 @@ public class Utils {
     }
     public static int charToInt(char character) throws CastException {
         if(character<'0' || character>'9') {
-            throw new CastException("Invalid cast char->int ("+(int)character+").");
+            throw new CastException("Invalid cast char->int ("+character+").");
         }
         return (int)(character)-48;
     }
@@ -40,7 +40,7 @@ public class Utils {
     }
     public static byte charToByte(char character) throws CastException {
         if(character>((char)255)){
-            throw new CastException("Invalid cast char->byte"+character);
+            throw new CastException("Invalid cast char->byte");
         }
         return (byte)character;
     }

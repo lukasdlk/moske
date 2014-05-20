@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 
-package moske;
+package os;
 
-import moske.ResourceDescriptor.ResourceName;
+import os.ResourceDescriptor.ResourceName;
+
 
 /**
  *

@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package moske;
+package os;
 
 /**
  *
- * @author LD
+ * @author adomas
  */
-public class Processor {
-    
+public class OS {
+
 }
