@@ -10,18 +10,17 @@ package os;
  *
  * @author adomas
  */
-public abstract class Process implements Comparable {
+public abstract class Process implements Comparable<Process> {
     public ProcessDescriptor pDesc;
-    public Processor processor;
     public OS os;
     
-    public Process (ProcessDescriptor pDesc, Processor processor, OS os) {
+    public Process (ProcessDescriptor pDesc, OS os) {
         this.pDesc = pDesc;
-        this.processor = processor;
         this.os = os;
     }
     
 
+    
     public int compareTo(Process o) {
         if (this.pDesc.priority > o.pDesc.priority)
             return 1;
