@@ -10,6 +10,6 @@ package os;
  *
  * @author adomas
  */
-public interface Processor {
+public class Processor {
     
 }

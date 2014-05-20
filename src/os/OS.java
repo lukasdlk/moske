@@ -10,6 +10,6 @@ package os;
  *
  * @author adomas
  */
-public interface OS {
-    public OS getOS();
+public class OS {
+
 }
