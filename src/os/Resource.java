@@ -4,12 +4,28 @@
  * and open the template in the editor.
  */
 
-package os;
+package moske;
+
+import moske.ResourceDescriptor.ResourceName;
 
 /**
  *
- * @author adomas
+ * @author LD
  */
 public class Resource {
     
+    public ResourceDescriptor deskriptorius;
+    
+    public Resource (int intId, ResourceName extId, OS os, Process creatorProcess, boolean reusable, Object component){
+        
+        this.deskriptorius = new ResourceDescriptor(intId,extId,os,creatorProcess,reusable, component);
+    }
+    
+    	public ResourceDescriptor getResDesc() {
+		return deskriptorius;
+	}
+        
+        	public void setResDesc(ResourceDescriptor deskriptorius) {
+		this.deskriptorius = deskriptorius;
+	}
 }
